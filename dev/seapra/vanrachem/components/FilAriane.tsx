@@ -37,36 +37,40 @@ export default function FilAriane() {
     switch (type) {
       case "consultation":
         return (
-          <Badge variant="outline" className="bg-blue-50 text-blue-700 hover:bg-blue-50">
-            Consultation
+          <Badge variant="outline" className="bg-blue-50 text-blue-700 hover:bg-blue-50 text-[10px] sm:text-xs px-1.5 py-0.5">
+            <span className="sm:hidden">Consult.</span>
+            <span className="hidden sm:inline">Consultation</span>
           </Badge>
         )
       case "medication":
         return (
-          <Badge variant="outline" className="bg-green-50 text-green-700 hover:bg-green-50">
-            Médicament
+          <Badge variant="outline" className="bg-green-50 text-green-700 hover:bg-green-50 text-[10px] sm:text-xs px-1.5 py-0.5">
+            <span className="sm:hidden">Médic.</span>
+            <span className="hidden sm:inline">Médicament</span>
           </Badge>
         )
       case "test":
         return (
-          <Badge variant="outline" className="bg-purple-50 text-purple-700 hover:bg-purple-50">
+          <Badge variant="outline" className="bg-purple-50 text-purple-700 hover:bg-purple-50 text-[10px] sm:text-xs px-1.5 py-0.5">
             Analyse
           </Badge>
         )
       case "hospitalization":
         return (
-          <Badge variant="outline" className="bg-red-50 text-red-700 hover:bg-red-50">
-            Hospitalisation
+          <Badge variant="outline" className="bg-red-50 text-red-700 hover:bg-red-50 text-[10px] sm:text-xs px-1.5 py-0.5">
+            <span className="sm:hidden">Hosp.</span>
+            <span className="hidden sm:inline">Hospitalisation</span>
           </Badge>
         )
       case "vaccination":
         return (
-          <Badge variant="outline" className="bg-amber-50 text-amber-700 hover:bg-amber-50">
-            Vaccination
+          <Badge variant="outline" className="bg-amber-50 text-amber-700 hover:bg-amber-50 text-[10px] sm:text-xs px-1.5 py-0.5">
+            <span className="sm:hidden">Vaccin</span>
+            <span className="hidden sm:inline">Vaccination</span>
           </Badge>
         )
       default:
-        return <Badge variant="outline">Autre</Badge>
+        return <Badge variant="outline" className="text-[10px] sm:text-xs px-1.5 py-0.5">Autre</Badge>
     }
   }
 
